@@ -257,7 +257,16 @@
     <Compile Include="Assets\Script\PlayerTurn.cs" />
     <Compile Include="Assets\Script\ScriptableObjectCreator.cs" />
     <Compile Include="Assets\Script\ScriptableObjectUtility.cs" />
+    <Compile Include="Assets\Script\Skills\BuffAction.cs" />
+    <Compile Include="Assets\Script\Skills\OffensiveAction.cs" />
+    <Compile Include="Assets\Script\Skills\Skill.cs" />
+    <Compile Include="Assets\Script\Skills\SkillAction.cs" />
+    <Compile Include="Assets\Script\Skills\SupportAction.cs" />
     <Compile Include="Assets\Script\Snapshotter.cs" />
+    <Compile Include="Assets\Script\Stats\Buff.cs" />
+    <Compile Include="Assets\Script\Stats\DefaultStats.cs" />
+    <Compile Include="Assets\Script\Stats\StatDecorator.cs" />
+    <Compile Include="Assets\Script\Stats\Stats.cs" />
     <Compile Include="Assets\Script\Tuple.cs" />
     <Compile Include="Assets\Script\TurnManager.cs" />
     <Compile Include="Assets\Script\UsableModel.cs" />
@@ -265,6 +274,7 @@
     <Compile Include="Assets\Script\Weapon.cs" />
     <Compile Include="Assets\Script\WeaponCollider.cs" />
     <Compile Include="Assets\Script\WeaponData.cs" />
+    <Compile Include="Assets\Script\Windows\SkillManagerWindow.cs" />
     <Compile Include="Assets\Script\Zip.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
