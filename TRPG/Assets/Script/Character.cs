@@ -5,11 +5,7 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    public float moveTime;
-    public int hp;
-    public int mana;
-    public int maxHp;
-    public int maxMana;
+    public CharacterData stats;
     bool _isDead;
     int _ownerId;
     int _charId;
@@ -67,7 +63,7 @@ public class Character : MonoBehaviour
             StartCoroutine(LerpPosition(transform.position, target.transform.position, lerpTime));
             Invoke("Attack", lerpTime);
             Invoke("EndAttack", 1);
-            Invoke("EndAssault", 1.1f + moveTime);
+            Invoke("EndAssault", 1.1f + stats.moveTime);
         }
     }
 
@@ -84,8 +80,8 @@ public class Character : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        hp -= damage;
-        if (hp <= 0)
+        stats.hp -= damage;
+        if (stats.hp <= 0)
         {
             IsDead = true;
             var graph = GetComponentsInChildren<Renderer>();
@@ -109,7 +105,7 @@ public class Character : MonoBehaviour
 
     void Move(Vector3 from, Vector3 to)
     {
-        StartCoroutine(LerpPosition(from, to, moveTime));
+        StartCoroutine(LerpPosition(from, to, stats.moveTime));
     }
 
     IEnumerator LerpPosition(Vector3 startPos, Vector3 endPos, float maxTime)

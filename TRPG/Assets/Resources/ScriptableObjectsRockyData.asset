@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c4a5085152d6154286c3aa0d9df229b, type: 3}
+  m_Name: ScriptableObjectsRockyData
+  m_EditorClassIdentifier: 
+  moveTime: 123
+  hp: 123
+  mana: 123123
+  maxHp: 123
+  maxMana: 123123
+  armor: 123
+  weapon: {fileID: 0}
